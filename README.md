@@ -2,6 +2,8 @@
 
 > We thank **Prof. Hugues Chaté**, **Prof. Jürgen Kurths**, **Prof. Youjin Deng**, **Prof. Xiaqing Shi**, **Prof. Yueheng Lan**, **Dr. Sarthak Chandra**, and **Dr. Maoxin Liu** for valuable discussions and insights.
 
+> We are particularly grateful to **Prof. Hugues Chaté** (former Lead Editor of *Physical Review Letters*) and **Prof. Jürgen Kurths** for their encouragement and guidance throughout this work.
+
 **Data repository for:** Z. Qiu, T. Wu, S. Fang, J. Meng, and J. Fan, "Criticality and universality of generalized Kuramoto model," (2026).
 
 This repository contains the simulation code, numerical data, plotting scripts, and publication figures that support the main claims of the manuscript — particularly the determination of the **upper critical dimension $d_u = 5$** via spectral-dimension tests on complex networks with tuneable spectral dimension.
@@ -54,11 +56,11 @@ generalized-kuramoto-criticality/
 
 ## Models
 
-Both models follow the framework of Millán et al. [2]: the bond probability between two nodes is proportional to a power law of their distance, $P(r) \sim r^{-\sigma}$, which allows continuous tuning of the spectral dimension $d_s$.
+Both models follow the framework of Millán et al. [2]: the bond probability between two nodes is proportional to a power law of their distance, $P(r) \sim r^{-(d_{\text{latt}} + \sigma)}$, where $d_{\text{latt}}$ is the base lattice dimension. The spectral dimension is then $d_s = 2d_{\text{latt}} / \sigma$ (for $\eta = 0$; see [1] for the general case).
 
 ### 2D LRDG (Long-Range Diluted Graph)
 
-Based on Bighin, Enss, and Defenu [1]. Links are randomly placed on a 2D square lattice with $P(r) \sim r^{-\sigma}$, giving $d_s = 4/\sigma$.
+Based on Bighin, Enss, and Defenu [1]. Links are randomly placed on a 2D square lattice with $P(r) \sim r^{-(2+\sigma)}$ ($d_{\text{latt}} = 2$), giving $d_s = 4/\sigma$ (for $\eta = 0$).
 
 | Parameter | Values |
 |-----------|--------|
@@ -71,7 +73,7 @@ Based on Bighin, Enss, and Defenu [1]. Links are randomly placed on a 2D square 
 
 ### 1D long-range network
 
-Based on Millán, Gori, Battiston, Enss, and Defenu [2]. Links are placed on a 1D chain with $P(r) \sim r^{-\sigma}$, giving $d_s = 2/\sigma$.
+Based on Millán, Gori, Battiston, Enss, and Defenu [2]. Links are placed on a 1D chain with $P(r) \sim r^{-(1+\sigma)}$ ($d_{\text{latt}} = 1$), giving $d_s = 2/\sigma$.
 
 | Parameter | Values |
 |-----------|--------|
