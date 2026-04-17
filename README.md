@@ -1,5 +1,7 @@
 # Generalized Kuramoto Model: Criticality and Universality
 
+> We thank **Prof. Hugues Chaté**, **Prof. Jürgen Kurths**, **Prof. Youjin Deng**, **Prof. Xiaqing Shi**, **Prof. Yueheng Lan**, **Dr. Sarthak Chandra**, and **Dr. Maoxin Liu** for valuable discussions and insights.
+
 **Data repository for:** Z. Qiu, T. Wu, S. Fang, J. Meng, and J. Fan, "Criticality and universality of generalized Kuramoto model," (2026).
 
 This repository contains the simulation code, numerical data, plotting scripts, and publication figures that support the main claims of the manuscript — particularly the determination of the **upper critical dimension $d_u = 5$** via spectral-dimension tests on complex networks with tuneable spectral dimension.
