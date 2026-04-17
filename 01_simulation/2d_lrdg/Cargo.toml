@@ -1,0 +1,22 @@
+[package]
+name = "lrdg_kuramoto_batch"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ndarray = "0.15"
+ndarray-npy = "0.8"
+rand = "0.8"
+rand_pcg = "0.3"
+rand_distr = "0.4"
+rayon = "1.7"
+log = "0.4"
+env_logger = "0.10"
+clap = { version = "4.0", features = ["derive"] }
+
+# 锁定pest版本以兼容Rust 1.82
+[dependencies.pest]
+version = "=2.7.0"
+
+[dependencies.pest_derive]
+version = "=2.7.0"
